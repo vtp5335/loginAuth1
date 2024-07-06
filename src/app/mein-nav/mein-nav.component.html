@@ -1,0 +1,7 @@
+<div>
+    <p>mein-nav works!</p>
+    <a [routerLink]="['/home']" [routerLinkActive]="'active'">Home</a> &nbsp;
+    <a [routerLink]="['/about']" [routerLinkActive]="'active'">About</a> &nbsp;
+    <button (click)="logout()" *ngIf="isLoggedIn$ | async as isLoggedIn">Log out</button>
+
+</div>
